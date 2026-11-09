@@ -22,8 +22,8 @@ interface SocialProfile {
 const socialProfiles: Record<string, SocialProfile> = {
   GitHub: {
     name: "Shivraj Timilsena",
-    handle: "shivraj598",
-    avatar: "https://github.com/shivraj598.png",
+    handle: "shivrajcode",
+    avatar: "https://github.com/shivrajcode.png",
     bio: "Engineer / Artist",
     location: "Kathmandu, Nepal",
     stats: [],
@@ -39,7 +39,7 @@ const socialProfiles: Record<string, SocialProfile> = {
   LinkedIn: {
     name: "Shivraj Timilsena",
     handle: "in/shivraj-timilsena",
-    avatar: "https://github.com/shivraj598.png",
+    avatar: "https://github.com/shivrajcode.png",
     bio: "Engineer / Artist",
     location: "Kathmandu, Nepal",
     stats: [],
@@ -47,7 +47,7 @@ const socialProfiles: Record<string, SocialProfile> = {
   Discord: {
     name: "Shivraj Timilsena",
     handle: "shivrajxd",
-    avatar: "https://github.com/shivraj598.png",
+    avatar: "https://github.com/shivrajcode.png",
     bio: "Even if it's dark, keep moving forward.",
     location: "",
     stats: [],
@@ -55,7 +55,7 @@ const socialProfiles: Record<string, SocialProfile> = {
   Medium: {
     name: "Shivraj Timilsena",
     handle: "@timilsenashivraj598",
-    avatar: "https://github.com/shivraj598.png",
+    avatar: "https://github.com/shivrajcode.png",
     bio: "Engineer / Artist",
     location: "Kathmandu, Nepal",
     stats: [],

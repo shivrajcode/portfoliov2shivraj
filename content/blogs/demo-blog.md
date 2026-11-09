@@ -71,7 +71,7 @@ same way.
 - Headings, lists, and quotes
 - `inline code` and code blocks
 - **Bold** and *italic* text
-- [External links](https://github.com/shivraj598)
+- [External links](https://github.com/shivrajcode)
 
 ```ts
 const post = await getBlog("demo-blog");

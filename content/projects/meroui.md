@@ -12,7 +12,7 @@ tech:
   - motion
   - cloud
   - css3
-github: https://github.com/shivraj598/meroUI
+github: https://github.com/shivrajcode/meroUI
 live: https://meroui.shivraj.me/
 hasPin: true
 ---

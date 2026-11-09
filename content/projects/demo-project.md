@@ -10,7 +10,7 @@ tech:
   - react
   - ts
   - tailwind
-github: https://github.com/shivraj598
+github: https://github.com/shivrajcode
 live: ""
 hasPin: false
 hidden: true
@@ -37,6 +37,6 @@ Some Markdown to prove styling works:
 
 - Bullet lists render with the blueprint aesthetic.
 - **Bold**, *italics*, and `inline code` all work.
-- [Links](https://github.com/shivraj598) work too.
+- [Links](https://github.com/shivrajcode) work too.
 
 > A blockquote renders separately for quotes and callouts.

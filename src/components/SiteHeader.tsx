@@ -77,7 +77,7 @@ export function SiteHeader(props: SiteHeaderProps) {
                   }}
                 >
                   <Image
-                    src="https://github.com/shivraj598.png"
+                    src="https://github.com/shivrajcode.png"
                     alt="Profile"
                     width={240}
                     height={240}

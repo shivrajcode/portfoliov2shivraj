@@ -17,7 +17,7 @@ tech:
   - cloud
   - radixui
   - tailwind
-github: https://github.com/shivraj598/The_Research_Desk--Multi-Agent-Research-Report-System
+github: https://github.com/shivrajcode/The_Research_Desk--Multi-Agent-Research-Report-System
 live: ""
 hasPin: true
 ---

@@ -14,7 +14,7 @@ tech:
   - tailwind
   - radixui
   - charts
-github: https://github.com/shivraj598/ProjectFlow
+github: https://github.com/shivrajcode/ProjectFlow
 live: https://projectflow.shivraj.me/
 starsText: 0
 hasPin: true
@@ -52,7 +52,7 @@ web client.
 ### Running locally
 
 ```bash
-git clone https://github.com/shivraj598/ProjectFlow.git
+git clone https://github.com/shivrajcode/ProjectFlow.git
 cd ProjectFlow
 pnpm install
 pnpm --filter @projectflow/api db:push && pnpm --filter @projectflow/api db:seed

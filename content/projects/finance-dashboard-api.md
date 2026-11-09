@@ -12,7 +12,7 @@ tech:
   - tailwind
   - radixui
   - charts
-github: https://github.com/shivraj598/finance-dashboard-api
+github: https://github.com/shivrajcode/finance-dashboard-api
 live: ""
 hasPin: true
 ---
@@ -65,7 +65,7 @@ covering financial records, dashboard analytics, and multi-role access control.
 ### Running locally
 
 ```bash
-git clone https://github.com/shivraj598/finance-dashboard-api
+git clone https://github.com/shivrajcode/finance-dashboard-api
 cd finance-dashboard-api
 
 python -m venv venv

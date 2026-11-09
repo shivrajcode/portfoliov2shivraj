@@ -14,7 +14,7 @@ tech:
   - langgraph
   - rag
   - gemini
-github: https://github.com/shivraj598/DocMindAI-Adaptive-Rag
+github: https://github.com/shivrajcode/DocMindAI-Adaptive-Rag
 live: ""
 hasPin: true
 ---

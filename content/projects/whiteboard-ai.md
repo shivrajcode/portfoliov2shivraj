@@ -8,7 +8,7 @@ tech:
   - react
   - node
   - css3
-github: https://github.com/shivraj598/whiteboardAI
+github: https://github.com/shivrajcode/whiteboardAI
 live: https://whiteboard-ai-nu.vercel.app
 hasPin: false
 ---

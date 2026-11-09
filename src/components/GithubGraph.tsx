@@ -85,7 +85,7 @@ export function GithubGraph() {
 
   useEffect(() => {
     const fetchContributions = async () => {
-      const cacheKey = "github_contributions_v3";
+      const cacheKey = "github_contributions_v4";
       const TTL = 24 * 60 * 60 * 1000;
       const cachedData = typeof window !== "undefined" ? localStorage.getItem(cacheKey) : null;
       
@@ -105,7 +105,7 @@ export function GithubGraph() {
 
       const query = `
         query {
-          user(login: "shivraj598") {
+          user(login: "shivrajcode") {
             contributionsCollection {
               contributionCalendar {
                 totalContributions
@@ -158,7 +158,7 @@ export function GithubGraph() {
         throw new Error("GitHub proxy did not return a contribution calendar");
       } catch (error) {
         try {
-          const response = await fetch("https://github-contributions-api.jogruber.de/v4/shivraj598?y=last");
+          const response = await fetch("https://github-contributions-api.jogruber.de/v4/shivrajcode?y=last");
           if (!response.ok) throw new Error(`Public contribution API returned ${response.status}`);
 
           const data = await response.json() as { contributions?: PublicContribution[] };

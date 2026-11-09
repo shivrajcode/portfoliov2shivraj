@@ -139,7 +139,7 @@ helpful error if something is off. Cards on the homepage, the `/projects` and
 
 ## Connect
 
-- **GitHub:** [shivraj598](https://github.com/shivraj598)
+- **GitHub:** [shivrajcode](https://github.com/shivrajcode)
 - **Twitter / X:** [@shivrajme_](https://x.com/shivrajme_)
 - **LinkedIn:** [shivraj-timilsena](https://www.linkedin.com/in/shivraj-timilsena/)
 
