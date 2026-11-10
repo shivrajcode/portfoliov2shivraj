@@ -14,6 +14,7 @@ import { CursorGlow } from "@/components/CursorGlow";
 import Image from "next/image";
 import { getAllProjects } from "@/lib/content";
 import { getAllBlogs } from "@/lib/content";
+import { SHOW_OPEN_SOURCE } from "@/lib/features";
 import { Reveal, RevealGroup } from "@/components/animations/reveal";
 import { SplitHeading } from "@/components/animations/split-heading";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -256,11 +257,13 @@ export default async function Home() {
         </Reveal>
 
         {/* Open Source Contributions */}
-        <Reveal y={24}>
-          <div id="opensource" className="scroll-mt-24">
-            <OpenSourceContributions />
-          </div>
-        </Reveal>
+        {SHOW_OPEN_SOURCE && (
+          <Reveal y={24}>
+            <div id="opensource" className="scroll-mt-24">
+              <OpenSourceContributions />
+            </div>
+          </Reveal>
+        )}
 
         {/* Skills */}
         <div id="skills" className="mt-6 flex flex-col relative z-10 scroll-mt-24">
