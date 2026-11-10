@@ -265,6 +265,18 @@ export default async function Home() {
           </Reveal>
         )}
 
+        {/* Blogs */}
+        <div id="blogs" className="mt-6 flex flex-col relative scroll-mt-24">
+          <div className="py-2 relative mt-1">
+            <SplitHeading
+              text="Blogs"
+              className="text-[18px] font-bold text-zinc-900 dark:text-zinc-100 tracking-tight"
+            />
+          </div>
+
+          <BlogList blogs={blogs} />
+        </div>
+
         {/* Skills */}
         <div id="skills" className="mt-6 flex flex-col relative z-10 scroll-mt-24">
           <div className="py-2 relative mt-1">
@@ -294,18 +306,6 @@ export default async function Home() {
             </div>
             </RevealGroup>
           </div>
-        </div>
-
-        {/* Blogs */}
-        <div id="blogs" className="mt-6 flex flex-col relative scroll-mt-24">
-          <div className="py-2 relative mt-1">
-            <SplitHeading
-              text="Blogs"
-              className="text-[18px] font-bold text-zinc-900 dark:text-zinc-100 tracking-tight"
-            />
-          </div>
-
-          <BlogList blogs={blogs} />
         </div>
 
         {/* Minimal Quote Section */}

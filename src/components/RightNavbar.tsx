@@ -22,7 +22,7 @@ export function RightNavbar() {
       { rootMargin: "-20% 0px -60% 0px", threshold: 0.1 }
     );
 
-    const sections = ["experience", "projects", "opensource", "skills", "blogs", "contact"].filter(
+    const sections = ["experience", "projects", "opensource", "blogs", "skills", "contact"].filter(
       (id) => SHOW_OPEN_SOURCE || id !== "opensource"
     );
     sections.forEach((id) => {
@@ -37,8 +37,8 @@ export function RightNavbar() {
     { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
     { name: "Open Source", href: "#opensource" },
-    { name: "Skills", href: "#skills" },
     { name: "Blog", href: "#blogs" },
+    { name: "Skills", href: "#skills" },
     { name: "Contact", href: "mailto:timilsenashivraj598@gmail.com?subject=Hello%20Shivraj" },
   ].filter((link) => SHOW_OPEN_SOURCE || link.href !== "#opensource");
 
