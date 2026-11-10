@@ -4,8 +4,12 @@ import { RightNavbar } from "@/components/RightNavbar";
 import { SiteHeader } from "@/components/SiteHeader";
 import { OpenSourceContributions } from "@/components/OpenSourceContributions";
 import { motion } from "framer-motion";
+import { notFound } from "next/navigation";
+import { SHOW_OPEN_SOURCE } from "@/lib/features";
 
 export default function PullRequestsPage() {
+  if (!SHOW_OPEN_SOURCE) notFound();
+
   return (
     <div className="min-h-screen w-full relative overflow-x-hidden transition-colors duration-300">
       {/* Right Side Blueprint Navigation */}
