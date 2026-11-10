@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { playUiSound } from "@/lib/sounds";
+import { SHOW_OPEN_SOURCE } from "@/lib/features";
 
 export function RightNavbar() {
   const pathname = usePathname();
@@ -21,7 +22,9 @@ export function RightNavbar() {
       { rootMargin: "-20% 0px -60% 0px", threshold: 0.1 }
     );
 
-    const sections = ["experience", "projects", "opensource", "skills", "blogs", "contact"];
+    const sections = ["experience", "projects", "opensource", "skills", "blogs", "contact"].filter(
+      (id) => SHOW_OPEN_SOURCE || id !== "opensource"
+    );
     sections.forEach((id) => {
       const element = document.getElementById(id);
       if (element) observer.observe(element);
@@ -37,7 +40,7 @@ export function RightNavbar() {
     { name: "Skills", href: "#skills" },
     { name: "Blog", href: "#blogs" },
     { name: "Contact", href: "mailto:timilsenashivraj598@gmail.com?subject=Hello%20Shivraj" },
-  ];
+  ].filter((link) => SHOW_OPEN_SOURCE || link.href !== "#opensource");
 
   // Only render on the homepage where the #hash sections exist
   if (pathname !== "/") return null;

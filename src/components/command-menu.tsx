@@ -17,6 +17,7 @@ import {
     BookOpen
 } from "lucide-react"
 import { SiGithub } from "react-icons/si"
+import { SHOW_OPEN_SOURCE } from "@/lib/features"
 
 import {
     CommandDialog,
@@ -83,7 +84,7 @@ export function CommandMenu() {
                 } else if (key === 'b') {
                     e.preventDefault()
                     runCommand(() => window.location.hash = "#blogs")
-                } else if (key === 'o') {
+                } else if (key === 'o' && SHOW_OPEN_SOURCE) {
                     e.preventDefault()
                     runCommand(() => window.location.hash = "#opensource")
                 } else if (key === 's') {
@@ -166,11 +167,13 @@ export function CommandMenu() {
                             <span>Blogs</span>
                             <CommandShortcut className="font-mono text-[10px] bg-zinc-100 dark:bg-zinc-800 px-1.5 py-0.5 rounded border border-zinc-200 dark:border-zinc-700">shift + B</CommandShortcut>
                         </CommandItem>
-                        <CommandItem onSelect={() => runCommand(() => window.location.hash = "#opensource")} className="rounded-lg py-3 cursor-pointer">
-                            <SiGithub className="mr-2 h-4 w-4 text-zinc-500" />
-                            <span>Open Source</span>
-                            <CommandShortcut className="font-mono text-[10px] bg-zinc-100 dark:bg-zinc-800 px-1.5 py-0.5 rounded border border-zinc-200 dark:border-zinc-700">shift + O</CommandShortcut>
-                        </CommandItem>
+                        {SHOW_OPEN_SOURCE && (
+                            <CommandItem onSelect={() => runCommand(() => window.location.hash = "#opensource")} className="rounded-lg py-3 cursor-pointer">
+                                <SiGithub className="mr-2 h-4 w-4 text-zinc-500" />
+                                <span>Open Source</span>
+                                <CommandShortcut className="font-mono text-[10px] bg-zinc-100 dark:bg-zinc-800 px-1.5 py-0.5 rounded border border-zinc-200 dark:border-zinc-700">shift + O</CommandShortcut>
+                            </CommandItem>
+                        )}
                         <CommandItem onSelect={() => runCommand(() => window.location.hash = "#skills")} className="rounded-lg py-3 cursor-pointer">
                             <BookOpen className="mr-2 h-4 w-4 text-zinc-500" />
                             <span>Skills</span>

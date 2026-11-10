@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { CommandMenu } from "./command-menu";
+import { SHOW_OPEN_SOURCE } from "@/lib/features";
 
 export function TopNavbar() {
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -28,7 +29,9 @@ export function TopNavbar() {
       { rootMargin: "-20% 0px -60% 0px", threshold: 0.1 }
     );
 
-    const sections = ["experience", "projects", "blogs", "opensource", "skills"];
+    const sections = ["experience", "projects", "blogs", "opensource", "skills"].filter(
+      (id) => SHOW_OPEN_SOURCE || id !== "opensource"
+    );
     sections.forEach((id) => {
       const element = document.getElementById(id);
       if (element) observer.observe(element);
